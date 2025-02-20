@@ -73,7 +73,7 @@ module.exports = {
           console.log("Is this still useful? " + parsedMove)
         } */
         console.log(character)
-        let escapedMoves = move
+        //let escapedMoves = move
         /* console.log(parsedMove)
         let escapedMoves = ''
         const moveArray = parsedMove.split(" ")
@@ -86,16 +86,16 @@ module.exports = {
         }) ;
         escapedMoves = escapedMoves.trimEnd();*/
         // If move not found, exit.
-        if (data[character].hasOwnProperty(escapedMoves) === false) {
+        if (data[character].hasOwnProperty(move) === false) {
           return interaction.reply('Could not find specified move: ' + move + 'for ' + character + '. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1SYthdRZpnCAaH5WzgESqxkFnkU2EfPJgozz1PAM_vMw) for available data.');
         }
-        let moveData = data[character][escapedMoves];
+        let moveData = data[character][move];
         const startup = (moveData['Startup (F)'] !== null) ? moveData['Startup (F)'].toString() : '-';
         const active = (moveData['Active (F)'] !== null) ? moveData['Active (F)'].toString() : '-';
         const recovery = (moveData['Recovery (F)'] !== null) ? moveData['Recovery (F)'].toString() : '-';
         const oh = (moveData['On Hit (F)'] !== null) ? moveData['On Hit (F)'].toString() : '-';
         const ob = (moveData['On Guard (F)'] !== null) ? moveData['On Guard (F)'].toString() : '-';
-        const inv = (moveData['Invincibility'] !== null) ? moveData['Invincibility'].toString() : '-';
+        const inv = (moveData['Invincibility'] !== null) ? moveData['Invincibility'].toString() : 'No known invincibility.';
         const notes = (moveData['Notes'] !== null) ? moveData['Notes'].toString() : 'No notes found.';
         // const dmg = (moveData['Damage'] !== null) ? moveData['Damage'].toString() : '-'; no damage field yet
         // Get character img for thumbnail.
@@ -106,7 +106,7 @@ module.exports = {
           .setColor('#0x1a2c78')
           .setTitle(character)
           .setURL('https://dreamcancel.com/wiki/The_King_of_Fighters_XIII/' + character)
-          .setAuthor({ name: escapedMoves, iconURL: 'https://pbs.twimg.com/profile_images/1150082025673625600/m1VyNZtc_400x400.png', url: 'https://docs.google.com/spreadsheets/d/1SYthdRZpnCAaH5WzgESqxkFnkU2EfPJgozz1PAM_vMw' })
+          .setAuthor({ name: move, iconURL: 'https://pbs.twimg.com/profile_images/1150082025673625600/m1VyNZtc_400x400.png', url: 'https://docs.google.com/spreadsheets/d/1SYthdRZpnCAaH5WzgESqxkFnkU2EfPJgozz1PAM_vMw' })
           // .setDescription('Move input')
           .setThumbnail('https://tiermaker.com/images/media/template_images/2024/1448043/kof-xiii-global-match-characters-1448043/thumb' + img + '.png')
           .addFields(
