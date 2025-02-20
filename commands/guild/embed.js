@@ -24,48 +24,34 @@ module.exports = {
     fs.readFile("./assets/framedataxiii.json", "utf8", (err, jsonObject) => {
       if (err) {
         // console.log("Error reading file from disk:", err);
-        return interaction.reply('Could not load frame data file. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1lzpQMoGAboJezLT9WRd3O-vlNDNRlgF_47ShtBGZ3G4) for the data.');
+        return interaction.reply('Could not load frame data file. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1SYthdRZpnCAaH5WzgESqxkFnkU2EfPJgozz1PAM_vMw) for the data.');
       }
       try {
         let data = JSON.parse(jsonObject);
         // Capitilize first letter of character name.
         let character = char.charAt(0).toUpperCase() + char.slice(1);
         // Temp: validate extra names.
-        if (character === 'Mary') {
-          character = 'Blue Mary'
+        if (character === 'Ex iori' ||
+            character === 'Ex Iori') {
+          character = 'EX Iori'
             }
-        if (character === 'O.Chris') {
-          character = 'Orochi Chris'
+        if (character === 'Ex kyo' ||
+            character === 'Ex Kyo') {
+          character = 'EX Kyo'
             }
-        if (character === 'O.Shermie') {
-          character = 'Orochi Shermie'
-            }
-        if (character === 'O.Yashiro') {
-          character = 'Orochi Yashiro'
-            }
-        if (character === 'Ex kensou' ||
-            character === 'Ex Kensou') {
-          character = 'EX Kensou'
-            }
-        if (character === 'Ex robert' ||
-            character === 'Ex Robert') {
-          character = 'EX Robert'
-            }
-        if (character === 'Ex takuma' ||
-            character === 'Ex Takuma') {
-          character = 'EX Takuma'
+        if (character === 'Mr. karate' ||
+            character === 'Mr Karate' ||
+            character === 'Karate') {
+          character = 'Mr. Karate'
             }
         if (character === 'K Dash' ||
             character === 'K`') {
           character = 'K'
             }
-        if (character === 'May Lee' ||
-            character === 'May Lee(Standard)') {
-          character = 'May Lee(Normal)'
-            }
+        character = this.getCharacter(character)
         // If character not found, exit.
         if (data.hasOwnProperty(character) === false) {
-          return interaction.reply('Could not find character: ' + character + '. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1lzpQMoGAboJezLT9WRd3O-vlNDNRlgF_47ShtBGZ3G4) for available characters.');
+          return interaction.reply('Could not find character: ' + character + '. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1SYthdRZpnCAaH5WzgESqxkFnkU2EfPJgozz1PAM_vMw) for available characters.');
         }
         // Trim extra whitespaces from move.
         /* let parsedMove = move.trim();
@@ -87,7 +73,7 @@ module.exports = {
           console.log("Is this still useful? " + parsedMove)
         } */
         console.log(character)
-        let escapedMoves = move
+        // let escapedMoves = move
         /* console.log(parsedMove)
         let escapedMoves = ''
         const moveArray = parsedMove.split(" ")
@@ -100,46 +86,45 @@ module.exports = {
         }) ;
         escapedMoves = escapedMoves.trimEnd();*/
         // If move not found, exit.
-        if (data[character].hasOwnProperty(escapedMoves) === false) {
-          return interaction.reply('Could not find specified move: ' + move + 'for ' + character + '. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1lzpQMoGAboJezLT9WRd3O-vlNDNRlgF_47ShtBGZ3G4) for available data.');
+        if (data[character].hasOwnProperty(move) === false) {
+          return interaction.reply('Could not find specified move: ' + move + 'for ' + character + '. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1SYthdRZpnCAaH5WzgESqxkFnkU2EfPJgozz1PAM_vMw) for available data.');
         }
-        let moveData = data[character][escapedMoves];
+        let moveData = data[character][move];
         const startup = (moveData['Startup (F)'] !== null) ? moveData['Startup (F)'].toString() : '-';
         const active = (moveData['Active (F)'] !== null) ? moveData['Active (F)'].toString() : '-';
         const recovery = (moveData['Recovery (F)'] !== null) ? moveData['Recovery (F)'].toString() : '-';
         const oh = (moveData['On Hit (F)'] !== null) ? moveData['On Hit (F)'].toString() : '-';
         const ob = (moveData['On Guard (F)'] !== null) ? moveData['On Guard (F)'].toString() : '-';
+        const inv = (moveData['Invincibility'] !== null) ? moveData['Invincibility'].toString() : 'No known invincibility.';
         const notes = (moveData['Notes'] !== null) ? moveData['Notes'].toString() : 'No notes found.';
-        const dmg = (moveData['Damage'] !== null) ? moveData['Damage'].toString() : '-';
-        // Get lowercase trimmed character name for official site url.
-        let lowerCaseChar = character.toLowerCase();
-        lowerCaseChar = lowerCaseChar.split(/\s+/).join('');
-        // Get character link and img for header and thumbnail.
-        const link = this.getCharacterLink(character);
+        // const dmg = (moveData['Damage'] !== null) ? moveData['Damage'].toString() : '-'; no damage field yet
+        // Get character img for thumbnail.
         const img = this.getCharacterImg(character);
         // console.log(charNo);
         const embeds = [];
         const embed = new MessageEmbed()
           .setColor('#0x1a2c78')
           .setTitle(character)
-          .setURL('https://dreamcancel.com/wiki/The_King_of_Fighters_2002_UM/' + link)
-          .setAuthor({ name: escapedMoves, iconURL: 'https://pbs.twimg.com/profile_images/1150082025673625600/m1VyNZtc_400x400.png', url: 'https://docs.google.com/spreadsheets/d/1lzpQMoGAboJezLT9WRd3O-vlNDNRlgF_47ShtBGZ3G4' })
+          .setURL('https://dreamcancel.com/wiki/The_King_of_Fighters_XIII/' + link)
+          .setAuthor({ name: move, iconURL: 'https://pbs.twimg.com/profile_images/1150082025673625600/m1VyNZtc_400x400.png', url: 'https://docs.google.com/spreadsheets/d/1SYthdRZpnCAaH5WzgESqxkFnkU2EfPJgozz1PAM_vMw' })
           // .setDescription('Move input')
-          .setThumbnail('https://tiermaker.com/images/chart/chart/the-king-of-fighters-2002-um-characters-137019/64px-portraitkof2002um' + img + 'png.png')
+          .setThumbnail('https://tiermaker.com/images/media/template_images/2024/1448043/kof-xiii-global-match-characters-1448043/thumb' + img + '.png')
           .addFields(
             { name: 'Startup', value: startup, inline: true },
             { name: 'Active', value: active, inline: true },
             { name: 'Recovery', value: recovery, inline: true },
             { name: '\u200B', value: '\u200B' },
-            { name: 'Damage', value: dmg, inline: true },
+            //{ name: 'Damage', value: dmg, inline: true },
             { name: 'On hit', value: oh, inline: true },
             { name: 'On block', value: ob, inline: true },
+            { name: '\u200B', value: '\u200B' },
+            { name: 'Invincibility', value: inv },
             { name: '\u200B', value: '\u200B' },
             { name: 'Notes', value: notes },
             // { name: 'Inline field title', value: 'Some value here', inline: true },
           )
-          .setFooter({ text: 'Got feedback? Join the 02UM server: discord.gg/8JNXHxf', iconURL: 'https://cdn.iconscout.com/icon/free/png-128/discord-3-569463.png' });
-          (moveData['Image'] != null) ? embed.setImage(moveData['Image']) : embed.addField('No image was found for this move', 'Feel free to share with the [developers](https://github.com/FranckFrost/kof02um_framebot/issues) if you have one.', true);
+          .setFooter({ text: 'Got feedback? Join the XIII server: discord.gg/tNgSuGJ', iconURL: 'https://cdn.iconscout.com/icon/free/png-128/discord-3-569463.png' });
+          (moveData['Image'] != null) ? embed.setImage(moveData['Image']) : embed.addField('No image was found for this move', 'Feel free to share with the [developers](https://github.com/FranckFrost/kofxiii_framebot/issues) if you have one.', true);
         embeds.push(embed);
         if (moveData['Image1'] != null) {
           const embed1 = new MessageEmbed().setImage(moveData['Image1']);
@@ -180,72 +165,83 @@ module.exports = {
         return interaction.reply({embeds: embeds});
       } catch (err) {
         console.log("Error parsing JSON string:", err);
-        return interaction.reply('There was an error while processing your request, if the problem persists, contact the bot developers. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1lzpQMoGAboJezLT9WRd3O-vlNDNRlgF_47ShtBGZ3G4) to look for the data.');
+        return interaction.reply('There was an error while processing your request, if the problem persists, contact the bot developers. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1SYthdRZpnCAaH5WzgESqxkFnkU2EfPJgozz1PAM_vMw) to look for the data.');
       }
     });
   },
-  getCharacterLink: function(character) {
-    const charLink = {
-      'Andy': 'Andy_Bogard',
-      'Athena': 'Athena_Asamiya',
-      'Benimaru': 'Benimaru_Nikaido',
-      'Billy': 'Billy_Kane',
-      'Blue Mary': 'Blue_Mary',
-      'EX Kensou': 'EX_Kensou',
-      'EX Robert': 'EX_Robert',
-      'EX Takuma': 'EX_Takuma',
-      'Orochi Chris': 'Orochi_Chris',
-      'Orochi Shermie': 'Orochi_Shermie',
-      'Orochi Yashiro': 'Orochi_Yashiro',
-      'Chang': 'Chang_Koehan',
-      'Chin': 'Chin_Gentsai',
-      'Choi': 'Choi_Bounge',
-      'Clark': 'Clark_Still',
-      'Foxy': 'Foxy',
-      'Daimon': 'Goro_Daimon',
-      'Hinako': 'Hinako_Shijou',
-      'Iori': 'Iori_Yagami',
-      'Jhun': 'Jhun_Hoon',
-      'Joe': 'Joe_Higashi',
-      'K': 'K%27',
-      'Kasumi': 'Kasumi_Todoh',
-      'Kim': 'Kim_Kaphwan',
-      'Kula': 'Kula_Diamond',
-      'Kyo': 'Kyo_Kusanagi',
-      'Leona': 'Leona_Heidern',
-      'Xiangfei': 'Li_Xiangfei',
-      'Mai': 'Mai_Shiranui',
-      'May Lee(Normal)': 'May_Lee',
-      'May Lee(Hero)': 'May_Lee',
-      'Ralf': 'Ralf_Jones',
-      'Robert': 'Robert_Garcia',
-      'Ryo': 'Ryo_Sakazaki',
-      'Yamazaki': 'Ryuji_Yamazaki',
-      'Shingo': 'Shingo_Yabuki',
-      'Kensou': 'Sie_Kensou',
-      'Takuma': 'Takuma_Sakazaki',
-      'Terry': 'Terry_Bogard',
-      'Yashiro': 'Yashiro_Nanakase',
-      'Yuri': 'Yuri_Sakazaki'
+  getCharacter: function(character) {
+    const chart = {
+      'Andy': 'Andy Bogard',
+      'Ash': 'Ash Crimson',
+      'Athena': 'Athena Asamiya',
+      'Benimaru': 'Benimaru Nikaido',
+      'Billy': 'Billy Kane',
+      'Chin': 'Chin Gentsai',
+      'Duo': 'Duo Lon',
+      'Clark': 'Clark Still',
+      'Elisabeth': 'Elisabeth Branctorche',
+      'Daimon': 'Goro Daimon',
+      'Hwa': 'Hwa Jai',
+      'Iori': 'Iori Yagami',
+      'Joe': 'Joe Higashi',
+      'Kim': 'Kim Kaphwan',
+      'Kula': 'Kula Diamond',
+      'Kyo': 'Kyo Kusanagi',
+      'Leona': 'Leona Heidern',
+      'Mai': 'Mai Shiranui',
+      'Ralf': 'Ralf Jones',
+      'Robert': 'Robert Garcia',
+      'Ryo': 'Ryo Sakazaki',
+      'Shen': 'Shen Woo',
+      'Kensou': 'Sie Kensou',
+      'Takuma': 'Takuma Sakazaki',
+      'Terry': 'Terry Bogard',
+      'Yuri': 'Yuri Sakazaki'
     };
-    if (charLink[character] === undefined) {
+    if (chart[character] === undefined) {
       return character;
     }
-    return charLink[character];
+    return chart[character];
   },
   getCharacterImg: function(character) {
-    const charImg = {
-      'EX Kensou': 'kensouex',
-      'EX Robert': 'robertex',
-      'EX Takuma': 'takumaex',
-      'Kyo-1': 'kyo1',
-      'Kyo-2': 'kyo2',
-      'May Lee(Normal)': 'maylee',
-      'May Lee(Hero)': 'maylee',
+    const chartImg = {
+      'Andy Bogard': '42',
+      'Ash Crimson': '111',
+      'Athena Asamiya': '61',
+      'Benimaru Nikaido': '22',
+      'Billy Kane': '112',
+      'Chin Gentsai': '63',
+      'Clark Still': '83',
+      'Duo Lon': '12',
+      'Elisabeth Branctorche': '11',
+      'EX Iori': '114',
+      'EX Kyo': '115',
+      'King': '93',
+      'Goro Daimon': '23',
+      'Mature': '32',
+      'Maxima': '103',
+      'Mr. Karate': '116',
+      'Raiden': '53',
+      'Saiki': '113',
+      'Vice': '33',
+      'Hwa Jai': '52',
+      'Iori Yagami': '31',
+      'Joe Higashi': '43',
+      'K': '101',
+      'Kim Kaphwan': '51',
+      'Kula Diamond': '102',
+      'Kyo Kusanagi': '21',
+      'Leona Heidern': '81',
+      'Mai Shiranui': '91',
+      'Ralf Jones': '82',
+      'Robert Garcia': '72',
+      'Ryo Sakazaki': '71',
+      'Shen Woo': '13',
+      'Sie Kensou': '62',
+      'Takuma Sakazaki': '73',
+      'Terry Bogard': '41',
+      'Yuri Sakazaki': '92'
     };
-    if (charImg[character] === undefined) {
-      return character.toLowerCase().replace(' ', '');
-    }
-    return charImg[character];
+    return chartImg[character];
   }
 };
