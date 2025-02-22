@@ -98,7 +98,8 @@ module.exports = {
         const inv = (moveData['Invincibility'] !== null) ? moveData['Invincibility'].toString() : 'No known invincibility.';
         const notes = (moveData['Notes'] !== null) ? moveData['Notes'].toString() : 'No notes found.';
         // const dmg = (moveData['Damage'] !== null) ? moveData['Damage'].toString() : '-'; no damage field yet
-        // Get character img for thumbnail.
+        // Get character link and img for url and thumbnail.
+        const link = character.replace(' ','_'); // necessary, somehow.
         const img = this.getCharacterImg(character);
         // console.log(charNo);
         const embeds = [];
