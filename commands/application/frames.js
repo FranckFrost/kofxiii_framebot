@@ -95,7 +95,7 @@ module.exports = {
         const recovery = (moveData['Recovery (F)'] !== null) ? moveData['Recovery (F)'].toString() : '-';
         const oh = (moveData['On Hit (F)'] !== null) ? moveData['On Hit (F)'].toString() : '-';
         const ob = (moveData['On Guard (F)'] !== null) ? moveData['On Guard (F)'].toString() : '-';
-        const inv = (moveData['Invincibility'] !== null) ? moveData['Invincibility'].toString() : 'No known invincibility.';
+        const inv = (moveData['Invincibility'] !== null) ? moveData['Invincibility'].toString() : 'No recorded invincibility.';
         const notes = (moveData['Notes'] !== null) ? moveData['Notes'].toString() : 'No notes found.';
         // const dmg = (moveData['Damage'] !== null) ? moveData['Damage'].toString() : '-'; no damage field yet
         // Get character link and img for url and thumbnail.
