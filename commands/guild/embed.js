@@ -72,7 +72,7 @@ module.exports = {
           parsedMove = parsedMove.replace(' ', '')
           console.log("Is this still useful? " + parsedMove)
         } */
-        console.log(character)
+        console.log(character, move)
         // let escapedMoves = move
         /* console.log(parsedMove)
         let escapedMoves = ''
