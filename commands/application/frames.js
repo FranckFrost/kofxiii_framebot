@@ -98,14 +98,15 @@ module.exports = {
         const inv = (moveData['Invincibility'] !== null) ? moveData['Invincibility'].toString() : 'No known invincibility.';
         const notes = (moveData['Notes'] !== null) ? moveData['Notes'].toString() : 'No notes found.';
         // const dmg = (moveData['Damage'] !== null) ? moveData['Damage'].toString() : '-'; no damage field yet
-        // Get character img for thumbnail.
+        // Get character link and img for url and thumbnail.
+        const link = character.replace(' ','_'); // necessary, somehow.
         const img = this.getCharacterImg(character);
         // console.log(charNo);
         const embeds = [];
         const embed = new MessageEmbed()
           .setColor('#0x1a2c78')
           .setTitle(character)
-          .setURL('https://dreamcancel.com/wiki/The_King_of_Fighters_XIII/' + character)
+          .setURL('https://dreamcancel.com/wiki/The_King_of_Fighters_XIII/' + link)
           .setAuthor({ name: move, iconURL: 'https://pbs.twimg.com/profile_images/1150082025673625600/m1VyNZtc_400x400.png', url: 'https://docs.google.com/spreadsheets/d/1SYthdRZpnCAaH5WzgESqxkFnkU2EfPJgozz1PAM_vMw' })
           // .setDescription('Move input')
           .setThumbnail('https://tiermaker.com/images/media/template_images/2024/1448043/kof-xiii-global-match-characters-1448043/thumb' + img + '.png')
