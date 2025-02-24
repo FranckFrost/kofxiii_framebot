@@ -97,7 +97,8 @@ module.exports = {
         const ob = (moveData['On Guard (F)'] !== null) ? moveData['On Guard (F)'].toString() : '-';
         const inv = (moveData['Invincibility'] !== null) ? moveData['Invincibility'].toString() : 'No recorded invincibility.';
         const notes = (moveData['Notes'] !== null) ? moveData['Notes'].toString() : 'No notes found.';
-        // const dmg = (moveData['Damage'] !== null) ? moveData['Damage'].toString() : '-'; no damage field yet
+        const dmg = (moveData['Damage'] !== null) ? moveData['Damage'].toString() : '-';
+        const stun = (moveData['Stun'] !== null) ? moveData['Stun'].toString() : '-';
         // Get character link and img for url and thumbnail.
         const link = character.replace(' ','_'); // necessary, somehow.
         const img = this.getCharacterImg(character);
@@ -115,7 +116,9 @@ module.exports = {
             { name: 'Active', value: active, inline: true },
             { name: 'Recovery', value: recovery, inline: true },
             { name: '\u200B', value: '\u200B' },
-            //{ name: 'Damage', value: dmg, inline: true },
+            { name: 'Damage', value: dmg, inline: true },
+            { name: 'Stun', value: stun, inline: true },
+            { name: '\u200B', value: '\u200B' },
             { name: 'On hit', value: oh, inline: true },
             { name: 'On block', value: ob, inline: true },
             { name: '\u200B', value: '\u200B' },
@@ -169,7 +172,7 @@ module.exports = {
         return interaction.reply('There was an error while processing your request, if the problem persists, contact the bot developers. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1SYthdRZpnCAaH5WzgESqxkFnkU2EfPJgozz1PAM_vMw) to look for the data.');
       }
     });
-  },
+  };
   getCharacter: function(character) {
     const chart = {
       'Andy': 'Andy Bogard',
@@ -203,7 +206,7 @@ module.exports = {
       return character;
     }
     return chart[character];
-  },
+  };
   getCharacterImg: function(character) {
     const chartImg = {
       'Andy Bogard': '42',
