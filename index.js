@@ -52,11 +52,34 @@ client.on('interactionCreate', async autocomplete => {
       })
     }
     // 
-    const character = autocomplete.options.getString('character')
+    let character = autocomplete.options.getString('character')
     // If move is focused 
     if (currentName === "move" && character !== "") {
       // currentValue = autocomplete.options.getFocused()
       let moveObj = {}
+      if (json[character] === undefined) {
+	// Capitilize first letter of character name.
+        let char = character.charAt(0).toUpperCase() + character.slice(1);
+        // Temp: validate extra names.
+        if (char === 'Ex iori' ||
+            char === 'Ex Iori') {
+          char = 'EX Iori'
+            }
+        if (char === 'Ex kyo' ||
+            char === 'Ex Kyo') {
+          char = 'EX Kyo'
+            }
+        if (char === 'Mr. karate' ||
+            char === 'Mr Karate' ||
+            char === 'Karate') {
+          char = 'Mr. Karate'
+            }
+        if (char === 'K Dash' ||
+            char === 'K`') {
+          char = 'K'
+            }
+        character = this.getCharacter(char)
+      }
       if (json[character] === undefined) {
         moveObj["name"] = 'Moves not found for specified character, try another character';
         moveObj["value"] = 'Moves not found for specified character, try another character';
@@ -116,3 +139,38 @@ client.on("ready", () => {
 // Login to Discord with your client's token
 const token = process.env['DISCORD_TOKEN']
 client.login(token);
+
+getCharacter: function(character) {
+    const chart = {
+      'Andy': 'Andy Bogard',
+      'Ash': 'Ash Crimson',
+      'Athena': 'Athena Asamiya',
+      'Benimaru': 'Benimaru Nikaido',
+      'Billy': 'Billy Kane',
+      'Chin': 'Chin Gentsai',
+      'Duo': 'Duo Lon',
+      'Clark': 'Clark Still',
+      'Elisabeth': 'Elisabeth Branctorche',
+      'Daimon': 'Goro Daimon',
+      'Hwa': 'Hwa Jai',
+      'Iori': 'Iori Yagami',
+      'Joe': 'Joe Higashi',
+      'Kim': 'Kim Kaphwan',
+      'Kula': 'Kula Diamond',
+      'Kyo': 'Kyo Kusanagi',
+      'Leona': 'Leona Heidern',
+      'Mai': 'Mai Shiranui',
+      'Ralf': 'Ralf Jones',
+      'Robert': 'Robert Garcia',
+      'Ryo': 'Ryo Sakazaki',
+      'Shen': 'Shen Woo',
+      'Kensou': 'Sie Kensou',
+      'Takuma': 'Takuma Sakazaki',
+      'Terry': 'Terry Bogard',
+      'Yuri': 'Yuri Sakazaki'
+    };
+    if (chart[character] === undefined) {
+      return character;
+    }
+    return chart[character];
+  };
