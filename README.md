@@ -3,7 +3,6 @@ This is a KOF XIII bot in a very early stage of development made by [@Franck_Fro
 
 ## Getting started
 To start using this bot in your server, add it with the following [link](https://discord.com/api/oauth2/authorize?client_id=1341073865157115986&permissions=277025721344&scope=bot%20applications.commands). You can also view the bot in community bot listing platforms:
- - [Discord bots](https://discord.bots.gg/bots/950847013870772264)
  - [Top](https://top.gg/bot/950847013870772264)
 
 ## Usage
