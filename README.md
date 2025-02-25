@@ -14,7 +14,7 @@ The bot has a `/frames` slash command which accept 2 arguments:
 Hitbox images will be added slowly, starting with normal moves.
 
 ## Demo
-[![gif](https://media.giphy.com/media/LrqUuAZB2E3hGvHtOH/giphy.gif)](https://giphy.com/gifs/LrqUuAZB2E3hGvHtOH)
+[![gif](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTQ3cnF1c2Q2eXNzdWMydHVlYzQ1eXF3cnFkMGFidXpndG1uMHppMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/S03U5L21Mb3kyMvbcJ/giphy.gif)](https://giphy.com/gifs/S03U5L21Mb3kyMvbcJ)
 
 ## Feedback
 Visit the official [XIII Discord Server](https://discord.gg/tNgSuGJ) to discuss.
