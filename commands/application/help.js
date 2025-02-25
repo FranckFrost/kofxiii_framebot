@@ -18,7 +18,7 @@ module.exports = {
             { name: '\u200B', value: '\u200B' },
             { name: 'Demo', value: 'The following is a visual representation of how the bot works:', inline: false },
           )
-          .setImage('https://media.giphy.com/media/LrqUuAZB2E3hGvHtOH/giphy.gif')
+          .setImage('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTQ3cnF1c2Q2eXNzdWMydHVlYzQ1eXF3cnFkMGFidXpndG1uMHppMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/S03U5L21Mb3kyMvbcJ/giphy.gif')
           .setFooter({ text: 'Got feedback? Join the XIII server: https://discord.gg/tNgSuGJ', iconURL: 'https://cdn.iconscout.com/icon/free/png-128/discord-3-569463.png' });
         return interaction.reply({embeds: [embed]});
   },
