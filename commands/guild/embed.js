@@ -172,7 +172,7 @@ module.exports = {
         return interaction.reply('There was an error while processing your request, if the problem persists, contact the bot developers. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1SYthdRZpnCAaH5WzgESqxkFnkU2EfPJgozz1PAM_vMw) to look for the data.');
       }
     });
-  };
+  },
   getCharacter: function(character) {
     const chart = {
       'Andy': 'Andy Bogard',
@@ -206,7 +206,7 @@ module.exports = {
       return character;
     }
     return chart[character];
-  };
+  },
   getCharacterImg: function(character) {
     const chartImg = {
       'Andy Bogard': '42',
