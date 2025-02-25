@@ -78,7 +78,7 @@ client.on('interactionCreate', async autocomplete => {
             char === 'K`') {
           char = 'K'
             }
-        character = this.getCharacter(char)
+        character = getCharacter(char)
       }
       if (json[character] === undefined) {
         moveObj["name"] = 'Moves not found for specified character, try another character';
@@ -140,7 +140,7 @@ client.on("ready", () => {
 const token = process.env['DISCORD_TOKEN']
 client.login(token);
 
-getCharacter: function(character) {
+function getCharacter(character) {
     const chart = {
       'Andy': 'Andy Bogard',
       'Ash': 'Ash Crimson',
@@ -173,4 +173,4 @@ getCharacter: function(character) {
       return character;
     }
     return chart[character];
-  };
+};
