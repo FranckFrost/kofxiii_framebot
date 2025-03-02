@@ -49,7 +49,7 @@ module.exports = {
         const dmg = (moveData['Damage'] !== null) ? moveData['Damage'].toString() : '-';
         const stun = (moveData['Stun'] !== null) ? moveData['Stun'].toString() : '-';
         // Get character link and img for url and thumbnail.
-        const link = 'https://dreamcancel.com/wiki/The_King_of_Fighters_XIII/' + encodeURIcomponent(character);
+        const link = 'https://dreamcancel.com/wiki/The_King_of_Fighters_XIII/' + encodeURIComponent(character);
         const img = this.getCharacterImg(character);
         
         const embeds = [];
