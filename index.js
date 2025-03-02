@@ -55,32 +55,14 @@ client.on('interactionCreate', async autocomplete => {
     let character = autocomplete.options.getString('character')
     // If move is focused 
     if (currentName === "move" && character !== "") {
-      // currentValue = autocomplete.options.getFocused()
       let moveObj = {}
-      if (json[character] === undefined) {
-	// Capitilize first letter(s) of character name.
-        let a = (character.split(' ')[1]!==undefined) ? ' ' + character.split(' ')[1].charAt(0).toUpperCase() + character.split(' ')[1].slice(1) : ""
-	let char = character.split(' ')[0].charAt(0).toUpperCase() + character.split(' ')[0].slice(1) + a;
-        // Temp: validate extra names.
-        if (char === 'Ex iori' ||
-            char === 'Ex Iori') {
-          char = 'EX Iori'
-            }
-        if (char === 'Ex kyo' ||
-            char === 'Ex Kyo') {
-          char = 'EX Kyo'
-            }
-        if (char === 'Mr. karate' ||
-            char === 'Mr Karate' ||
-            char === 'Karate') {
-          char = 'Mr. Karate'
-            }
-        if (char === 'K Dash' ||
-            char === 'K`') {
-          char = 'K'
-            }
-        character = getCharacter(char)
-      }
+	if (json[character] === undefined) {
+	    // Capitilize first letter(s) of character name.
+	    let a = (character.split(' ')[1]!==undefined) ? ' ' + character.split(' ')[1].charAt(0).toUpperCase() + character.split(' ')[1].slice(1) : ""
+	    let char = character.split(' ')[0].charAt(0).toUpperCase() + character.split(' ')[0].slice(1) + a;
+	    // Temp: validate extra names.
+	    character = getCharacter(char)
+	}
       if (json[character] === undefined) {
         moveObj["name"] = 'Moves not found for specified character, try another character';
         moveObj["value"] = 'Moves not found for specified character, try another character';
@@ -158,15 +140,21 @@ function getCharacter(character) {
       'Duo': 'Duo Lon',
       'Clark': 'Clark Still',
       'Elisabeth': 'Elisabeth Branctorche',
+      'Ex Kyo': 'EX Kyo',
+      'Ex Iori': 'EX Iori',
       'Daimon': 'Goro Daimon',
       'Hwa': 'Hwa Jai',
       'Iori': 'Iori Yagami',
       'Joe': 'Joe Higashi',
+      'K`': 'K',
+      'K Dash': 'K',
       'Kim': 'Kim Kaphwan',
       'Kula': 'Kula Diamond',
       'Kyo': 'Kyo Kusanagi',
       'Leona': 'Leona Heidern',
       'Mai': 'Mai Shiranui',
+      'Karate': 'Mr. Karate',
+      'Mr Karate': 'Mr. Karate',
       'Ralf': 'Ralf Jones',
       'Robert': 'Robert Garcia',
       'Ryo': 'Ryo Sakazaki',
