@@ -18,7 +18,7 @@ module.exports = {
   			.setDescription('The move name or input.')
   			.setRequired(true)),
   async execute(interaction) {
-    const character = interaction.options.getString('character');
+    const character = this.getCharacter(interaction.options.getString('character'));
     const move = interaction.options.getString('move');
     // Load frame data json.
     fs.readFile("./assets/framedataxiii.json", "utf8", (err, jsonObject) => {
