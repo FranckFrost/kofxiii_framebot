@@ -18,77 +18,26 @@ module.exports = {
   			.setDescription('The move name or input.')
   			.setRequired(true)),
   async execute(interaction) {
-    const char = interaction.options.getString('character');
+    const character = interaction.options.getString('character');
     const move = interaction.options.getString('move');
     // Load frame data json.
     fs.readFile("./assets/framedataxiii.json", "utf8", (err, jsonObject) => {
       if (err) {
-        // console.log("Error reading file from disk:", err);
+        // If unable to read json, exit.
         return interaction.reply('Could not load frame data file. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1SYthdRZpnCAaH5WzgESqxkFnkU2EfPJgozz1PAM_vMw) for the data.');
       }
       try {
         let data = JSON.parse(jsonObject);
-        // Capitilize first letter of character name.
-        let character = char.charAt(0).toUpperCase() + char.slice(1);
-        // Temp: validate extra names.
-        if (character === 'Ex iori' ||
-            character === 'Ex Iori') {
-          character = 'EX Iori'
-            }
-        if (character === 'Ex kyo' ||
-            character === 'Ex Kyo') {
-          character = 'EX Kyo'
-            }
-        if (character === 'Mr. karate' ||
-            character === 'Mr Karate' ||
-            character === 'Karate') {
-          character = 'Mr. Karate'
-            }
-        if (character === 'K Dash' ||
-            character === 'K`') {
-          character = 'K'
-            }
-        character = this.getCharacter(character)
+        console.log(character, move)
         // If character not found, exit.
         if (data.hasOwnProperty(character) === false) {
           return interaction.reply('Could not find character: ' + character + '. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1SYthdRZpnCAaH5WzgESqxkFnkU2EfPJgozz1PAM_vMw) for available characters.');
         }
-        // Trim extra whitespaces from move.
-        /* let parsedMove = move.trim();
-        let singleButton = false
-        // Check if single button passed.
-        if (parsedMove.match(/^[+\-aAbBcCdD() .]+$/g)) {
-          singleButton = true
-          // console.log(parsedMove)
-          // Preppend "far" to return valid value.
-          parsedMove = (parsedMove === 'cd' || parsedMove === 'CD') ? parsedMove : 'far ' + parsedMove;
-        }
-        // console.log(parsedMove)
-        // Convert dots into whitespaces.
-        parsedMove = parsedMove.replace('.', ' ')
-        // Trim whitespaces and add caps, turning "236 a" into "236A".
-        if (parsedMove.match(/^[\d+ $+\-aAbBcCdD().]+$/g) ) {
-          parsedMove = parsedMove.toUpperCase()
-          parsedMove = parsedMove.replace(' ', '')
-          console.log("Is this still useful? " + parsedMove)
-        } */
-        console.log(character, move)
-        // let escapedMoves = move
-        /* console.log(parsedMove)
-        let escapedMoves = ''
-        const moveArray = parsedMove.split(" ")
-        moveArray.forEach((element) => {
-          // Turn ABCD to uppercase if they are not.
-          if (element.match(/^[+\-aAbBcCdD() .]+$/g) ) {
-            element = element.toUpperCase()
-          }
-          escapedMoves += element + ' ';
-        }) ;
-        escapedMoves = escapedMoves.trimEnd();*/
         // If move not found, exit.
         if (data[character].hasOwnProperty(move) === false) {
           return interaction.reply('Could not find specified move: ' + move + 'for ' + character + '. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1SYthdRZpnCAaH5WzgESqxkFnkU2EfPJgozz1PAM_vMw) for available data.');
         }
+        
         let moveData = data[character][move];
         const startup = (moveData['Startup (F)'] !== null) ? moveData['Startup (F)'].toString() : '-';
         const active = (moveData['Active (F)'] !== null) ? moveData['Active (F)'].toString() : '-';
@@ -100,14 +49,14 @@ module.exports = {
         const dmg = (moveData['Damage'] !== null) ? moveData['Damage'].toString() : '-';
         const stun = (moveData['Stun'] !== null) ? moveData['Stun'].toString() : '-';
         // Get character link and img for url and thumbnail.
-        const link = character.replace(' ','_'); // necessary, somehow.
+        const link = 'https://dreamcancel.com/wiki/The_King_of_Fighters_XIII/' + encodeURIcomponent(character);
         const img = this.getCharacterImg(character);
         // console.log(charNo);
         const embeds = [];
         const embed = new MessageEmbed()
           .setColor('#0x1a2c78')
           .setTitle(character)
-          .setURL('https://dreamcancel.com/wiki/The_King_of_Fighters_XIII/' + link)
+          .setURL(link)
           .setAuthor({ name: move, iconURL: 'https://pbs.twimg.com/profile_images/1150082025673625600/m1VyNZtc_400x400.png', url: 'https://docs.google.com/spreadsheets/d/1SYthdRZpnCAaH5WzgESqxkFnkU2EfPJgozz1PAM_vMw' })
           // .setDescription('Move input')
           .setThumbnail('https://tiermaker.com/images/media/template_images/2024/1448043/kof-xiii-global-match-characters-1448043/thumb' + img + '.png')
@@ -172,40 +121,6 @@ module.exports = {
         return interaction.reply('There was an error while processing your request, if the problem persists, contact the bot developers. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1SYthdRZpnCAaH5WzgESqxkFnkU2EfPJgozz1PAM_vMw) to look for the data.');
       }
     });
-  },
-  getCharacter: function(character) {
-    const chart = {
-      'Andy': 'Andy Bogard',
-      'Ash': 'Ash Crimson',
-      'Athena': 'Athena Asamiya',
-      'Benimaru': 'Benimaru Nikaido',
-      'Billy': 'Billy Kane',
-      'Chin': 'Chin Gentsai',
-      'Duo': 'Duo Lon',
-      'Clark': 'Clark Still',
-      'Elisabeth': 'Elisabeth Branctorche',
-      'Daimon': 'Goro Daimon',
-      'Hwa': 'Hwa Jai',
-      'Iori': 'Iori Yagami',
-      'Joe': 'Joe Higashi',
-      'Kim': 'Kim Kaphwan',
-      'Kula': 'Kula Diamond',
-      'Kyo': 'Kyo Kusanagi',
-      'Leona': 'Leona Heidern',
-      'Mai': 'Mai Shiranui',
-      'Ralf': 'Ralf Jones',
-      'Robert': 'Robert Garcia',
-      'Ryo': 'Ryo Sakazaki',
-      'Shen': 'Shen Woo',
-      'Kensou': 'Sie Kensou',
-      'Takuma': 'Takuma Sakazaki',
-      'Terry': 'Terry Bogard',
-      'Yuri': 'Yuri Sakazaki'
-    };
-    if (chart[character] === undefined) {
-      return character;
-    }
-    return chart[character];
   },
   getCharacterImg: function(character) {
     const chartImg = {
