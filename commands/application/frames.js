@@ -122,6 +122,48 @@ module.exports = {
       }
     });
   },
+  getCharacter: function(character) {
+    const chart = {
+      'Andy': 'Andy Bogard',
+      'Ash': 'Ash Crimson',
+      'Athena': 'Athena Asamiya',
+      'Benimaru': 'Benimaru Nikaido',
+      'Billy': 'Billy Kane',
+      'Chin': 'Chin Gentsai',
+      'Duo': 'Duo Lon',
+      'Clark': 'Clark Still',
+      'Elisabeth': 'Elisabeth Branctorche',
+      'Ex Kyo': 'EX Kyo',
+      'Ex Iori': 'EX Iori',
+      'Daimon': 'Goro Daimon',
+      'Hwa': 'Hwa Jai',
+      'Iori': 'Iori Yagami',
+      'Joe': 'Joe Higashi',
+      'K`': 'K',
+      'K Dash': 'K',
+      'Kim': 'Kim Kaphwan',
+      'Kula': 'Kula Diamond',
+      'Kyo': 'Kyo Kusanagi',
+      'Leona': 'Leona Heidern',
+      'Mai': 'Mai Shiranui',
+      'Karate': 'Mr. Karate',
+      'Mr Karate': 'Mr. Karate',
+      'Mr.Karate': 'Mr. Karate',
+      'MrKarate': 'Mr. Karate',
+      'Ralf': 'Ralf Jones',
+      'Robert': 'Robert Garcia',
+      'Ryo': 'Ryo Sakazaki',
+      'Shen': 'Shen Woo',
+      'Kensou': 'Sie Kensou',
+      'Takuma': 'Takuma Sakazaki',
+      'Terry': 'Terry Bogard',
+      'Yuri': 'Yuri Sakazaki'
+    };
+    if (chart[character] === undefined) {
+      return character;
+    }
+    return chart[character];
+  },
   getCharacterImg: function(character) {
     const chartImg = {
       'Andy Bogard': '42',
