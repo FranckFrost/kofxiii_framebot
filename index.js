@@ -155,6 +155,8 @@ function getCharacter(character) {
       'Mai': 'Mai Shiranui',
       'Karate': 'Mr. Karate',
       'Mr Karate': 'Mr. Karate',
+      'Mr.Karate': 'Mr. Karate',
+      'MrKarate': 'Mr. Karate',
       'Ralf': 'Ralf Jones',
       'Robert': 'Robert Garcia',
       'Ryo': 'Ryo Sakazaki',
