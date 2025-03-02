@@ -51,7 +51,7 @@ module.exports = {
         // Get character link and img for url and thumbnail.
         const link = 'https://dreamcancel.com/wiki/The_King_of_Fighters_XIII/' + encodeURIcomponent(character);
         const img = this.getCharacterImg(character);
-        // console.log(charNo);
+        
         const embeds = [];
         const embed = new MessageEmbed()
           .setColor('#0x1a2c78')
