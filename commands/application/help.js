@@ -11,7 +11,7 @@ module.exports = {
           .setTitle('Need Help?')
           .setAuthor({ name: 'KOFXIII FrameBot', iconURL: 'https://cdn.discordapp.com/icons/284354385687871488/23c6ea888ff2fec1dea94da791b9265a.webp?size=128', url: 'https://discord.gg/tNgSuGJ' })
           .addFields(
-            { name: 'Getting started', value: 'The bot provides a "move per command" response where you get to ask for information of a certain move of a certain character individually per request. The bot uses autocomplete, so please keep typing to filter the results to your needs. The bot has a **/frames** slash command which accept 2 arguments:', inline: false },
+            { name: 'Getting started', value: 'The bot displays available data of a certain move of a certain character individually per request. It uses autocomplete, so please keep typing to filter the results to your needs.\n Source of the data is the latest [framedata sheet](https://docs.google.com/spreadsheets/d/1SYthdRZpnCAaH5WzgESqxkFnkU2EfPJgozz1PAM_vMw) for the **/frames** slash command and the [Dream Cancel wiki](https://dreamcancel.com/wiki/The_King_of_Fighters_XIII) for **/cargo**.\n Their common arguments are as follows:', inline: false },
             { name: '\u200B', value: '\u200B' },
             { name: 'Character', value: 'The **character** which is a case insensitive string (e.g. takuma, Clark, iori)', inline: false },
             { name: 'Move', value: 'The **move** name or input which is a case insensitive string (e.g. crouchA, psycho ball)', inline: false },
