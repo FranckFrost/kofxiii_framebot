@@ -1,5 +1,5 @@
 ## Introduction
-This is a KOF XIII bot in a very early stage of development made by [@Franck_Frost](https://twitter.com/FranckFrost), and based on the XV bot by [@Lantors](https://github.com/dens0ne) to which a lot of credit goes to. The  information is pulled from the current latest [Framedata sheet](https://docs.google.com/spreadsheets/d/1SYthdRZpnCAaH5WzgESqxkFnkU2EfPJgozz1PAM_vMw) for /frames and directly from the [Dream Cancel wiki](https://dreamcancel.com/wiki/The_King_of_Fighters_XIII) for /cargo.
+This is a KOF XIII bot in a very early stage of development made by [@Franck_Frost](https://twitter.com/FranckFrost), and based on the XV bot by [@Lantors](https://github.com/dens0ne) to which a lot of credit goes to. The  information is pulled from the current latest [Framedata sheet](https://docs.google.com/spreadsheets/d/1Sxx9kKOmJ6DNn3wEwNinnuMxSKn6UnF_8QkrYLMSREc) for /frames and directly from the [Dream Cancel wiki](https://dreamcancel.com/wiki/The_King_of_Fighters_XIII) for /cargo.
 
 ## Getting started
 To start using this bot in your server, add it with the following [link](https://discord.com/api/oauth2/authorize?client_id=1341073865157115986&permissions=277025721344&scope=bot%20applications.commands). You can also view the bot in community bot listing platforms:
