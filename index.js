@@ -154,7 +154,7 @@ client.on("ready", () => {
   client.user.setPresence({
     status: "online",
     activities: [{
-      name: 'Kyo. Use /frames, /cargo or /help to get started.'
+      name: 'Claw. Use /frames, /cargo or /help to get started.'
     }],
   }); 
 });
