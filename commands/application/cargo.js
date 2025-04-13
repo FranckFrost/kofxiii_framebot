@@ -18,6 +18,7 @@ module.exports = {
   			.setDescription('The move name or input.')
   			.setRequired(true)),
   async execute(interaction) {
+    await interaction.deferReply();
     const character = this.getCharacter(interaction.options.getString('character'));
     const [id, move] = interaction.options.getString('move').split("??");
     console.log("cargo", character, move)
@@ -123,10 +124,11 @@ module.exports = {
             embeds.push(embed3)
           }
         }
-      return interaction.reply({embeds: embeds});
-      } catch (err) {
-        console.log("Error finishing cargo request", err);
-        return interaction.reply('There was an error while processing your request, if the problem persists, contact the bot developers. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1Sxx9kKOmJ6DNn3wEwNinnuMxSKn6UnF_8QkrYLMSREc) to look for the data.');
+      await interaction.editReply({embeds: embeds});
+      return;
+      } catch (error) {
+        console.log("Error finishing cargo request", error);
+        return interaction.editReply('There was an error while processing your request, if the problem persists, contact the bot developers. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1Sxx9kKOmJ6DNn3wEwNinnuMxSKn6UnF_8QkrYLMSREc) to look for the data.');
       }
   },
   getCharacter: function(character) {
