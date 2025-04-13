@@ -18,7 +18,6 @@ module.exports = {
   			.setDescription('The move name or input.')
   			.setRequired(true)),
   async execute(interaction) {
-    await interaction.deferReply();
     const character = this.getCharacter(interaction.options.getString('character'));
     const [id, move] = interaction.options.getString('move').split("??");
     console.log("cargo", character, move)
