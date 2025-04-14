@@ -41037,7 +41037,7 @@
       "Startup (F)": 12,
       "Active (F)": 18,
       "Recovery (F)": 21,
-      "On Hit (F)": "SKD",
+      "On Hit (F)": "HKD",
       "On Guard (F)": -10,
       "Damage": 50,
       "Stun": 6,
