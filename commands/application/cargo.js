@@ -21,7 +21,7 @@ module.exports = {
     const character = this.getCharacter(interaction.options.getString('character'));
     const mov = interaction.options.getString('move');
     if (mov.split("??")[1] === undefined) {
-      return interaction.editReply('You are free to type the character but you have to select the move from the scroll list. You can type to refine the search.')
+      return interaction.editReply('You are free to manually enter the character but you have to select the move from the scroll list. You can type to refine the search.')
     }
     const [id, move] = mov.split("??");
     console.log("cargo", character, move)
