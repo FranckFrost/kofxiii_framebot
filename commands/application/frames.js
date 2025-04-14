@@ -24,7 +24,7 @@ module.exports = {
     fs.readFile("./assets/framedataxiii.json", "utf8", (err, jsonObject) => {
       if (err) {
         // If unable to read json, exit.
-        return interaction.reply('Could not load frame data file. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1Sxx9kKOmJ6DNn3wEwNinnuMxSKn6UnF_8QkrYLMSREc) for the data.');
+        return interaction.reply('Could not load framedata file. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1Sxx9kKOmJ6DNn3wEwNinnuMxSKn6UnF_8QkrYLMSREc) for the data.');
       }
       try {
         let data = JSON.parse(jsonObject);
