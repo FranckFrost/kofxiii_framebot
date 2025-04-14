@@ -112,8 +112,8 @@ client.on('interactionCreate', async autocomplete => {
 					  }
 	    } else {
 		    if (json[character] === undefined) {
-			    moveObj["name"] = 'Moves not found for specified character, try another character';
-			    moveObj["value"] = 'Moves not found for specified character, try another character';
+			    moveObj["name"] = 'Moves not found for ' + character + ', try another character';
+			    moveObj["value"] = 'Moves not found for ' + character + ', try another character';
 			    options.push(moveObj);
 		    } else {
 			    let moves = [];
@@ -148,7 +148,7 @@ client.on('interactionCreate', async interaction => {
     await command.execute(interaction);
   } catch (error) {
     console.error(error);
-    await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
+    await interaction.reply('There was an error while executing this command! Reach out to <@259615904772521984>.');
   }
 });
 client.on("ready", () => {
