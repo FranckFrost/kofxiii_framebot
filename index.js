@@ -65,11 +65,15 @@ client.on('interactionCreate', async autocomplete => {
         }
       })
     }
-    // 
-    let character = autocomplete.options.getString('character')
     // If move is focused 
-    if (currentName === "move" && character !== "") {
+    if (currentName === "move") {
+      let character = autocomplete.options.getString('character')
       let moveObj = {}
+      if (character === "") {
+	    moveObj["name"] = 'Please enter a character first.';
+	    moveObj["value"] = 'Please enter a character first.';
+	    options.push(moveObj);
+      } else {
 	    // Capitilize first letter(s) of char name.
 	    let a = (character.split(' ')[1]!==undefined) ? ' ' + character.split(' ')[1].charAt(0).toUpperCase() + character.split(' ')[1].slice(1) : ""
 	    let char = character.split(' ')[0].charAt(0).toUpperCase() + character.split(' ')[0].slice(1) + a;
@@ -77,8 +81,8 @@ client.on('interactionCreate', async autocomplete => {
 	    character = getCharacter(char)
 	    if (autocomplete.commandName === 'cargo') {
 		    if (!characters.includes(character)) {
-			    moveObj["name"] = 'No cargo data available for specified character. Gather framedata with /frames instead.';
-                            moveObj["value"] = 'No cargo data available for specified character. Gather framedata with /frames instead.';
+			    moveObj["name"] = 'No cargo data available for ' + character + '. Gather framedata with /frames instead.';
+                            moveObj["value"] = 'No cargo data available for ' + character + '. Gather framedata with /frames instead.';
                             options.push(moveObj);
 		    } else {
 			    let move = "";
@@ -127,6 +131,7 @@ client.on('interactionCreate', async autocomplete => {
 			    })
 					  }
 	    }
+      }
     }
 	    await autocomplete.respond(options);
 	}
