@@ -41701,7 +41701,7 @@
       "Image9": null
     },
     "Lp Haoh Shoukou Ken ([f,hcf+A] / [641236A])": {
-      "Startup (F)": 20,
+      "Startup (F)": 18,
       "Active (F)": "Full Screen Projectile",
       "Recovery (F)": 47,
       "On Hit (F)": "SKD",
@@ -41724,7 +41724,7 @@
       "Image9": null
     },
     "Hp Haoh Shoukou Ken ([f,hcf+C] / [641236C])": {
-      "Startup (F)": 20,
+      "Startup (F)": 18,
       "Active (F)": "Full Screen Projectile",
       "Recovery (F)": 47,
       "On Hit (F)": "SKD",
