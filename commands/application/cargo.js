@@ -6,7 +6,7 @@ const fetch = require('node-fetch');
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('cargo')
-    .setDescription('Pick character name and move, to get a response with all available cargo data.')
+    .setDescription('Pick character name and move, to get a response with all available wiki cargo data.')
     .addStringOption(character =>
   		character.setName('character')
         .setAutocomplete(true)
@@ -19,7 +19,11 @@ module.exports = {
   			.setRequired(true)),
   async execute(interaction) {
     const character = this.getCharacter(interaction.options.getString('character'));
-    const [id, move] = interaction.options.getString('move').split("??");
+    const mov = interaction.options.getString('move');
+    if (mov.split("??")[1] === undefined) {
+      return interaction.editReply('You are free to type the character but you have to select the move from the scroll list. You can type to refine the search.')
+    }
+    const [id, move] = mov.split("??");
     console.log("cargo", character, move)
 
     try {
@@ -81,7 +85,7 @@ module.exports = {
       }
         embed.setFooter({ text: 'Got feedback? Join the XIII server: discord.gg/tNgSuGJ', iconURL: 'https://cdn.iconscout.com/icon/free/png-128/discord-3-569463.png' });
         if (hitboxes.length === 0) {
-          embed.addField('No image was found for this move', 'Feel free to share with the [developers](https://github.com/FranckFrost/kofxiii_framebot/issues) if you have one.', true);
+          embed.addField('No image was found for this move', 'Feel free to share with Franck Frost if you have one.', true);
         } else {
           let ind = "url\":\""
           
@@ -123,11 +127,10 @@ module.exports = {
             embeds.push(embed3)
           }
         }
-      await interaction.editReply({embeds: embeds});
-      return;
+      return interaction.editReply({embeds: embeds});
       } catch (error) {
         console.log("Error finishing cargo request", error);
-        return interaction.editReply('There was an error while processing your request, if the problem persists, contact the bot developers. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1Sxx9kKOmJ6DNn3wEwNinnuMxSKn6UnF_8QkrYLMSREc) to look for the data.');
+        return interaction.editReply('There was an error while processing your request, reach out to <@259615904772521984>. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1Sxx9kKOmJ6DNn3wEwNinnuMxSKn6UnF_8QkrYLMSREc) to look for the data.');
       }
   },
   getCharacter: function(character) {
