@@ -35,7 +35,7 @@ module.exports = {
         }
         // If move not found, exit.
         if (data[character].hasOwnProperty(move) === false) {
-          return interaction.reply('Could not find specified move: ' + move + 'for ' + character + '. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1Sxx9kKOmJ6DNn3wEwNinnuMxSKn6UnF_8QkrYLMSREc) for available data.');
+          return interaction.reply('Could not find specified move: ' + move + ' for ' + character + '. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1Sxx9kKOmJ6DNn3wEwNinnuMxSKn6UnF_8QkrYLMSREc) for available data.');
         }
         
         let moveData = data[character][move];
@@ -77,7 +77,7 @@ module.exports = {
             // { name: 'Inline field title', value: 'Some value here', inline: true },
           )
           .setFooter({ text: 'Got feedback? Join the XIII server: discord.gg/tNgSuGJ', iconURL: 'https://cdn.iconscout.com/icon/free/png-128/discord-3-569463.png' });
-          (moveData['Image'] != null) ? embed.setImage(moveData['Image']) : embed.addField('No image was found for this move', 'Feel free to share with the [developers](https://github.com/FranckFrost/kofxiii_framebot/issues) if you have one.', true);
+          (moveData['Image'] != null) ? embed.setImage(moveData['Image']) : embed.addField('No image was found for this move', 'Feel free to share with Franck Frost if you have one.', true);
         embeds.push(embed);
         if (moveData['Image1'] != null) {
           const embed1 = new MessageEmbed().setImage(moveData['Image1']);
@@ -116,9 +116,9 @@ module.exports = {
           embeds.push(embed9);
         } //10 embeds max per message
         return interaction.reply({embeds: embeds});
-      } catch (err) {
-        console.log("Error parsing JSON string:", err);
-        return interaction.reply('There was an error while processing your request, if the problem persists, contact the bot developers. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1Sxx9kKOmJ6DNn3wEwNinnuMxSKn6UnF_8QkrYLMSREc) to look for the data.');
+      } catch (error) {
+        console.log("Error parsing JSON string:", error);
+        return interaction.reply('There was an error while processing your request, reach out to <@259615904772521984>. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1Sxx9kKOmJ6DNn3wEwNinnuMxSKn6UnF_8QkrYLMSREc) to look for the data.');
       }
     });
   },
