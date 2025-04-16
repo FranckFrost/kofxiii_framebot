@@ -117,8 +117,8 @@ module.exports = {
         } //10 embeds max per message
         return interaction.reply({embeds: embeds});
       } catch (error) {
-        console.log("Error parsing JSON string:", error);
-        return interaction.reply('There was an error while processing your request, reach out to <@259615904772521984>. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1Sxx9kKOmJ6DNn3wEwNinnuMxSKn6UnF_8QkrYLMSREc) to look for the data.');
+        console.log("Error finishing frames request", error);
+        return interaction.reply('There was an error while processing your **frames** request, reach out to <@259615904772521984>. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1Sxx9kKOmJ6DNn3wEwNinnuMxSKn6UnF_8QkrYLMSREc) to look for the data.');
       }
     });
   },
