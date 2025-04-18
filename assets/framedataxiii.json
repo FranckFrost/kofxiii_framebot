@@ -4123,7 +4123,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Handou Sandan-Geri ([qcf+B/D > d,u+B/D] / [236B/D > 82B/D])": {
+    "Handou Sandan-Geri ([qcf+B/D > d,u+B/D] / [236B/D > 28B/D])": {
       "Startup (F)": 5,
       "Active (F)": "2,(5),5",
       "Recovery (F)": 50,
@@ -4169,7 +4169,7 @@
       "Image8": null,
       "Image9": null
     },
-    "EX Handou Sandan-Geri ([qcf+BD > d,u+B/D] / [236BD > 82B/D])": {
+    "EX Handou Sandan-Geri ([qcf+BD > d,u+B/D] / [236BD > 28B/D])": {
       "Startup (F)": 5,
       "Active (F)": "2,(5),12",
       "Recovery (F)": 51,
@@ -6358,7 +6358,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Far D ([dd+B/D > D] / [22B/D > D]": {
+    "Far D ([dd+B/D > D] / [22B/D > D])": {
       "Startup (F)": 10,
       "Active (F)": 3,
       "Recovery (F)": 20,
@@ -6875,7 +6875,7 @@
       "Invincibility": null,
       "Whiff Cancel": null,
       "Hitbox Gallery": null,
-      "Notes": "The damage increases with each drink stock. Freeze of 29",
+      "Notes": "Wall Bounce. The damage increases with each drink stock. Freeze of 29",
       "Image": null,
       "Image1": null,
       "Image2": null,
@@ -29036,7 +29036,7 @@
       "On Guard (F)": -27,
       "Damage": 234,
       "Stun": null,
-      "Invincibility": null,
+      "Invincibility": "Full: 1 to 21 (21 frames)",
       "Whiff Cancel": null,
       "Hitbox Gallery": null,
       "Notes": "Freeze of 29",
@@ -29059,7 +29059,7 @@
       "On Guard (F)": -24,
       "Damage": 367,
       "Stun": null,
-      "Invincibility": null,
+      "Invincibility": "Full: 1 to 21 (21 frames)",
       "Whiff Cancel": null,
       "Hitbox Gallery": null,
       "Notes": "Freeze of 29",
@@ -29082,7 +29082,7 @@
       "On Guard (F)": -40,
       "Damage": 210,
       "Stun": null,
-      "Invincibility": null,
+      "Invincibility": "Full: 1 to 5 (5 frames)",
       "Whiff Cancel": null,
       "Hitbox Gallery": null,
       "Notes": "Freeze of 29",
@@ -29105,7 +29105,7 @@
       "On Guard (F)": -18,
       "Damage": 470,
       "Stun": null,
-      "Invincibility": null,
+      "Invincibility": "Full: 1 to 9 (9 frames)",
       "Whiff Cancel": null,
       "Hitbox Gallery": null,
       "Notes": "Freeze of 76",
@@ -34293,7 +34293,7 @@
       "Invincibility": null,
       "Whiff Cancel": null,
       "Hitbox Gallery": "Link*",
-      "Notes": null,
+      "Notes": "Wall Bounce",
       "Image": null,
       "Image1": null,
       "Image2": null,
