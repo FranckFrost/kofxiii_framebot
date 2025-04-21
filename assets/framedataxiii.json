@@ -2165,7 +2165,7 @@
       "Image9": null
     },
     "MAX Germinal (During Sans-Culotte, [qcb,hcf+AC] / [2141236AC])": {
-      "Startup (F)": 0,
+      "Startup (F)": "1 (Back to Corner)",
       "Active (F)": 19,
       "Recovery (F)": 55,
       "On Hit (F)": "HKD",
@@ -2175,7 +2175,7 @@
       "Invincibility": "Full: 1 to 26 (26 Frames)",
       "Whiff Cancel": null,
       "Hitbox Gallery": "Link*",
-      "Notes": "Freeze of 58",
+      "Notes": "Can't be blocked on reaction with his back to the corner. Freeze of 58",
       "Image": null,
       "Image1": null,
       "Image2": null,
@@ -19127,7 +19127,7 @@
       "Active (F)": 22,
       "Recovery (F)": 3,
       "On Hit (F)": null,
-      "On Guard (F)": "Low: 1 to 14 (14 Frames)",
+      "On Guard (F)": null,
       "Damage": null,
       "Stun": null,
       "Invincibility": null,
