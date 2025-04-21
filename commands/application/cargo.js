@@ -129,7 +129,8 @@ module.exports = {
             embeds.push(embed3)
           }
         }
-      return interaction.editReply({embeds: embeds});
+      await interaction.editReply({embeds: embeds});
+      return;
       } catch (error) {
         console.log("Error finishing cargo request", error);
         await interaction.editReply('There was an error while processing your **cargo** request, reach out to <@259615904772521984>. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1Sxx9kKOmJ6DNn3wEwNinnuMxSKn6UnF_8QkrYLMSREc) to look for the data.');
