@@ -6197,7 +6197,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Zabanatestu ([dd+A/C] / [22A/C])": {
+    "Zabantetsu ([dd+A/C] / [22A/C])": {
       "Startup (F)": 1,
       "Active (F)": null,
       "Recovery (F)": 19,
@@ -6289,7 +6289,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Nikikyaku ([dd+B/D > B] / [22B/D > B])": {
+    "Nikikyaku (Choukarou) ([dd+B/D > B] / [22B/D > B])": {
       "Startup (F)": 9,
       "Active (F)": 7,
       "Recovery (F)": 15,
@@ -6312,7 +6312,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Follow Up ([dd+B/D > B > B] / [22B/D > B > B])": {
+    "Nikikyaku (Choukarou) ([dd+B/D > B > B] / [22B/D > B > B])": {
       "Startup (F)": 7,
       "Active (F)": 6,
       "Recovery (F)": 25,
@@ -6565,7 +6565,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Follow Up ([df+B > B] / [3B > B])": {
+    "Nikikyaku ([df+B > B] / [3B > B])": {
       "Startup (F)": 7,
       "Active (F)": 6,
       "Recovery (F)": 25,
@@ -6757,7 +6757,7 @@
       "On Guard (F)": -11,
       "Damage": 90,
       "Stun": 6,
-      "Invincibility": null,
+      "Invincibility": "Upper Body: 7 to 24 (18 frames)",
       "Whiff Cancel": null,
       "Hitbox Gallery": null,
       "Notes": "Can be followed by any ↓↙← move on hit/block",
@@ -6841,7 +6841,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Lp Tetsuzankou ([qcb,hcf+A] / [2141236A])": {
+    "Lp Tetsuzankou (With Drinking stocks, [qcb,hcf+A] / [2141236A])": {
       "Startup (F)": 11,
       "Active (F)": 4,
       "Recovery (F)": 27,
@@ -6864,7 +6864,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Hp Tetsuzankou ([qcb,hcf+C] / [2141236C])": {
+    "Hp Tetsuzankou (With Drinking stocks, [qcb,hcf+C] / [2141236C])": {
       "Startup (F)": 18,
       "Active (F)": 6,
       "Recovery (F)": 35,
@@ -9745,7 +9745,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Lp Etincelles ([qcf+A] / [236A])": {
+    "Lp Étincelles ([qcf+A] / [236A])": {
       "Startup (F)": 10,
       "Active (F)": 6,
       "Recovery (F)": 16,
@@ -9768,7 +9768,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Hp Etincelles ([qcf+C] / [236C])": {
+    "Hp Étincelles ([qcf+C] / [236C])": {
       "Startup (F)": 23,
       "Active (F)": 11,
       "Recovery (F)": 10,
@@ -9791,7 +9791,7 @@
       "Image8": null,
       "Image9": null
     },
-    "EX Etincelles ([qcf+AC] / [236AC])": {
+    "EX Étincelles ([qcf+AC] / [236AC])": {
       "Startup (F)": 11,
       "Active (F)": 9,
       "Recovery (F)": 12,
@@ -9814,7 +9814,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Reveire-Souhaiter ([qcf+B/D] / [236B/D])": {
+    "Rêverie-Souhaiter ([qcf+B/D] / [236B/D])": {
       "Startup (F)": "4 (To Cancel Window)",
       "Active (F)": "17 (Cancel Window)",
       "Recovery (F)": 8,
@@ -9822,7 +9822,7 @@
       "On Guard (F)": "-",
       "Damage": null,
       "Stun": null,
-      "Invincibility": null,
+      "Invincibility": "Upper Body: 1 to 20 (20 frames)",
       "Whiff Cancel": null,
       "Hitbox Gallery": "Link",
       "Notes": "Can cancel into other specials moves except Reveire-Prier moves.",
@@ -9837,7 +9837,7 @@
       "Image8": null,
       "Image9": null
     },
-    "EX Reveire-Souhaiter ([qcf+BD] / [236BD])": {
+    "EX Rêverie-Souhaiter ([qcf+BD] / [236BD])": {
       "Startup (F)": "2 (To Cancel Window)",
       "Active (F)": "19 (Cancel Window)",
       "Recovery (F)": 8,
@@ -9845,7 +9845,7 @@
       "On Guard (F)": "-",
       "Damage": null,
       "Stun": null,
-      "Invincibility": "Full: 2 to 15 (14 frames)",
+      "Invincibility": "Upper Body: 1 (1 frame), Full: 2 to 15 (14 frames), Upper body: 16 to 20 (5 frames)",
       "Whiff Cancel": null,
       "Hitbox Gallery": "Link",
       "Notes": "Can cancel into other EX specials moves except Reveire-Prier moves.",
@@ -9860,7 +9860,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Reveire-Prier ([qcb+B/D] / [214B/D])": {
+    "Rêverie-Prier ([qcb+B/D] / [214B/D])": {
       "Startup (F)": "6 (To Cancel Window)",
       "Active (F)": "18 (Cancel Window)",
       "Recovery (F)": 13,
@@ -9868,7 +9868,7 @@
       "On Guard (F)": "-",
       "Damage": null,
       "Stun": null,
-      "Invincibility": "Low: 1 to 24 (24 frames)",
+      "Invincibility": "Low: 1 to 23 (23 frames)",
       "Whiff Cancel": null,
       "Hitbox Gallery": "Link",
       "Notes": "Can cancel into other specials moves except Reveire-Souhaiter moves.",
@@ -9883,7 +9883,7 @@
       "Image8": null,
       "Image9": null
     },
-    "EX Reveire-Prier ([qcb+BD] / [214BD])": {
+    "EX Rêverie-Prier ([qcb+BD] / [214BD])": {
       "Startup (F)": "2 (To Cancel Window)",
       "Active (F)": "23 (Cancel Window)",
       "Recovery (F)": 13,
@@ -9906,7 +9906,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Lp Reveire-Geler ([qcb+A] / [214A])": {
+    "Lp Rêverie-Geler ([qcb+A] / [214A])": {
       "Startup (F)": 2,
       "Active (F)": "15 (Counter Window)",
       "Recovery (F)": 14,
@@ -9929,7 +9929,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Hp Reveire-Geler ([qcb+C] / [214C])": {
+    "Hp Rêverie-Geler ([qcb+C] / [214C])": {
       "Startup (F)": 2,
       "Active (F)": "15 (Counter Window)",
       "Recovery (F)": 14,
@@ -9952,7 +9952,7 @@
       "Image8": null,
       "Image9": null
     },
-    "EX Reveire-Geler ([qcb+AC] / [214AC])": {
+    "EX Rêverie-Geler ([qcb+AC] / [214AC])": {
       "Startup (F)": 1,
       "Active (F)": "16 (Counter Window)",
       "Recovery (F)": 19,
