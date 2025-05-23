@@ -11036,9 +11036,9 @@
       "Image9": null
     },
     "212 Shiki · Kototsuki In ([hcb+B] / [63214B])": {
-      "Startup (F)": 20,
-      "Active (F)": 7,
-      "Recovery (F)": 35,
+      "Startup (F)": "20:(Earliest Active Attack)",
+      "Active (F)": "24:(Proximity Box Detection) / 7:(Active Attack)",
+      "Recovery (F)": "19:(Proximity Box Whiff) / 35:(After Active Attack)",
       "On Hit (F)": "HKD",
       "On Guard (F)": -19,
       "Damage": 146,
@@ -11046,7 +11046,7 @@
       "Invincibility": null,
       "Whiff Cancel": null,
       "Hitbox Gallery": null,
-      "Notes": "Activation Box appears on frames 7 to 30. 49 total frames on whiff",
+      "Notes": "Proximity Box appears on frames 7 to 30. 49 total frames on whiff",
       "Image": null,
       "Image1": null,
       "Image2": null,
@@ -11059,9 +11059,9 @@
       "Image9": null
     },
     "212 Shiki · Kototsuki In ([hcb+D] / [63214D])": {
-      "Startup (F)": 20,
-      "Active (F)": 7,
-      "Recovery (F)": 35,
+      "Startup (F)": "20:(Earliest Active Attack)",
+      "Active (F)": "35:(Proximity Box Detection) / 7:(Active Attack)",
+      "Recovery (F)": "19:(Proximity Box Whiff) / 35:(After Active Attack)",
       "On Hit (F)": "HKD",
       "On Guard (F)": -19,
       "Damage": 146,
@@ -11069,7 +11069,7 @@
       "Invincibility": null,
       "Whiff Cancel": null,
       "Hitbox Gallery": null,
-      "Notes": "Activation Box appears on frames 7 to 41. 60 total frames on whiff",
+      "Notes": "Proximity Box appears on frames 7 to 41. 60 total frames on whiff",
       "Image": null,
       "Image1": null,
       "Image2": null,
@@ -11104,7 +11104,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Lp 127 Shiki · Aoibara ([qcb+A] / [214A])": {
+    "Lp 127 Shiki · Aoibana ([qcb+A] / [214A])": {
       "Startup (F)": 9,
       "Active (F)": 3,
       "Recovery (F)": 22,
@@ -11127,7 +11127,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Lp 127 Shiki · Aoibara 2 ([qcb+Ax2] / [214Ax2])": {
+    "Lp 127 Shiki · Aoibana 2 ([qcb+Ax2] / [214Ax2])": {
       "Startup (F)": 9,
       "Active (F)": 3,
       "Recovery (F)": 25,
@@ -11150,7 +11150,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Lp 127 Shiki · Aoibara 3 ([qcb+Ax3] / [214Ax3])": {
+    "Lp 127 Shiki · Aoibana 3 ([qcb+Ax3] / [214Ax3])": {
       "Startup (F)": 18,
       "Active (F)": 2,
       "Recovery (F)": 27,
@@ -11173,7 +11173,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Hp 127 Shiki · Aoibara ([qcb+C] / [214C])": {
+    "Hp 127 Shiki · Aoibana ([qcb+C] / [214C])": {
       "Startup (F)": 15,
       "Active (F)": 3,
       "Recovery (F)": 25,
@@ -11196,7 +11196,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Hp 127 Shiki · Aoibara 2 ([qcb+Cx2] / [214Cx2])": {
+    "Hp 127 Shiki · Aoibana 2 ([qcb+Cx2] / [214Cx2])": {
       "Startup (F)": 12,
       "Active (F)": 3,
       "Recovery (F)": 28,
@@ -11219,7 +11219,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Hp 127 Shiki · Aoibara 3 ([qcb+Cx3] / [214Cx3])": {
+    "Hp 127 Shiki · Aoibana 3 ([qcb+Cx3] / [214Cx3])": {
       "Startup (F)": 18,
       "Active (F)": 9,
       "Recovery (F)": 27,
@@ -11242,7 +11242,7 @@
       "Image8": null,
       "Image9": null
     },
-    "EX 127 Shiki · Aoibara ([qcb+AC] / [214AC])": {
+    "EX 127 Shiki · Aoibana ([qcb+AC] / [214AC])": {
       "Startup (F)": 13,
       "Active (F)": 3,
       "Recovery (F)": 19,
@@ -11265,7 +11265,7 @@
       "Image8": null,
       "Image9": null
     },
-    "EX 127 Shiki · Aoibara 2 ([qcb+ACx2] / [214ACx2])": {
+    "EX 127 Shiki · Aoibana 2 ([qcb+ACx2] / [214ACx2])": {
       "Startup (F)": 11,
       "Active (F)": 3,
       "Recovery (F)": 28,
@@ -11288,7 +11288,7 @@
       "Image8": null,
       "Image9": null
     },
-    "EX 127 Shiki · Aoibara 3 ([qcb+ACx3] / [214ACx3])": {
+    "EX 127 Shiki · Aoibana 3 ([qcb+ACx3] / [214ACx3])": {
       "Startup (F)": 12,
       "Active (F)": 15,
       "Recovery (F)": 21,
@@ -11541,7 +11541,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Ura 1219 Shiki · Homurahotogi ([qcb,hcf+AC] / [2141236AC])": {
+    "Ura 1029 Shiki · Homurahotogi ([qcb,hcf+AC] / [2141236AC])": {
       "Startup (F)": 17,
       "Active (F)": 1,
       "Recovery (F)": 42,
@@ -11827,7 +11827,7 @@
       "On Guard (F)": -3,
       "Damage": 80,
       "Stun": 7,
-      "Invincibility": null,
+      "Invincibility": "Low: 3 to 14 (12 frames)",
       "Whiff Cancel": null,
       "Hitbox Gallery": null,
       "Notes": null,
@@ -12118,7 +12118,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Issetsu Seoi Nage (close, [b/f+C/D] / [4/6C/D])": {
+    "Issetsu Seoinage (close, [b/f+C/D] / [4/6C/D])": {
       "Startup (F)": 1,
       "Active (F)": 1,
       "Recovery (F)": 0,
@@ -12141,7 +12141,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Ge Shiki · Goufu You (Without Cancel, [f+B] / [6B])": {
+    "Ge Shiki · Gofu Yo (Without Cancel, [f+B] / [6B])": {
       "Startup (F)": 19,
       "Active (F)": 2,
       "Recovery (F)": 19,
@@ -12164,7 +12164,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Ge Shiki · Goufu You (With Cancel, [f+B] / [6B])": {
+    "Ge Shiki · Gofu Yo (With Cancel, [f+B] / [6B])": {
       "Startup (F)": 17,
       "Active (F)": 2,
       "Recovery (F)": 19,
@@ -12372,9 +12372,9 @@
       "Image9": null
     },
     "Lk 212 Shiki · Kototsuki Yo ([hcb+B] / [63214B])": {
-      "Startup (F)": 16,
-      "Active (F)": "5,(11),2",
-      "Recovery (F)": 42,
+      "Startup (F)": "16:(Earliest Active Attack)",
+      "Active (F)": "15:(Proximity Box Detection) / 5,(11),2:(Active Attack)",
+      "Recovery (F)": "13:(Proximity Box Whiff) / 42:(After Active Attack)",
       "On Hit (F)": "HKD",
       "On Guard (F)": -21,
       "Damage": 165,
@@ -12382,7 +12382,7 @@
       "Invincibility": "Low: from frame 1 until recovery",
       "Whiff Cancel": null,
       "Hitbox Gallery": null,
-      "Notes": "Activation Box appears on frames 10 to 24. 37 total frames on whiff",
+      "Notes": "Proximity Box appears on frames 10 to 24. 37 total frames on whiff. 21 frames of recovery on whiff after activation",
       "Image": null,
       "Image1": null,
       "Image2": null,
@@ -12395,9 +12395,9 @@
       "Image9": null
     },
     "Hk 212 Shiki · Kototsuki Yo ([hcb+D] / [63214D])": {
-      "Startup (F)": 16,
-      "Active (F)": "5,(11),2",
-      "Recovery (F)": 42,
+      "Startup (F)": "16:(Earliest Active Attack)",
+      "Active (F)": "27:(Proximity Box Detection) / 5,(11),2:(Active Attack)",
+      "Recovery (F)": "13:(Proximity Box Whiff) / 42:(After Active Attack)",
       "On Hit (F)": "HKD",
       "On Guard (F)": -21,
       "Damage": 165,
@@ -12405,7 +12405,7 @@
       "Invincibility": "Low: from frame 1 until recovery",
       "Whiff Cancel": null,
       "Hitbox Gallery": null,
-      "Notes": "Activation Box appears on frames 10 to 36. 49 total frames on whiff",
+      "Notes": "Proximity Box appears on frames 10 to 36. 49 total frames on whiff. 21 frames of recovery on whiff after activation",
       "Image": null,
       "Image1": null,
       "Image2": null,
@@ -12463,7 +12463,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Follow Up ([qcf+B > B/D] / [236B > B/D])": {
+    "Lk 75 Shiki · Kai ([qcf+B > B/D] / [236B > B/D])": {
       "Startup (F)": "7(minimum)",
       "Active (F)": 9,
       "Recovery (F)": 17,
@@ -12509,7 +12509,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Follow Up ([qcf+D > B/D] / [236D > B/D])": {
+    "Hk 75 Shiki · Kai ([qcf+D > B/D] / [236D > B/D])": {
       "Startup (F)": "7(minimum)",
       "Active (F)": 9,
       "Recovery (F)": 17,
@@ -12601,7 +12601,7 @@
       "Image8": null,
       "Image9": null
     },
-    "125 Shiki · Yanosabi① ([qcf+Ax2 > A/C] / [236Ax2 > A/C])": {
+    "127 Shiki · Yanosabi① ([qcf+Ax2 > A/C] / [236Ax2 > A/C])": {
       "Startup (F)": 10,
       "Active (F)": 4,
       "Recovery (F)": 28,
@@ -12647,7 +12647,7 @@
       "Image8": null,
       "Image9": null
     },
-    "128 Shiki · Yanosabi② ([qcf+A > hcb+A/C] / [236A > 63214A/C])": {
+    "127 Shiki · Yanosabi② ([qcf+A > hcb+A/C] / [236A > 63214A/C])": {
       "Startup (F)": 14,
       "Active (F)": 4,
       "Recovery (F)": 28,
@@ -12739,7 +12739,7 @@
       "Image8": null,
       "Image9": null
     },
-    "401 Shiki · Tsumiyomi ([qcf+C > hcb+A/C] / [236C > 63214A/C])": {
+    "401 Shiki · Tumiyomi ([qcf+C > hcb+A/C] / [236C > 63214A/C])": {
       "Startup (F)": 11,
       "Active (F)": 3,
       "Recovery (F)": 30,
@@ -12762,7 +12762,7 @@
       "Image8": null,
       "Image9": null
     },
-    "402 Shiki · Batsuyomi ([qcf+C > hcb+A/C > f+A/C] / [236C > 63214A/C > 6A/C])": {
+    "402 Shiki · Batuyomi ([qcf+C > hcb+A/C > f+A/C] / [236C > 63214A/C > 6A/C])": {
       "Startup (F)": 15,
       "Active (F)": 4,
       "Recovery (F)": 35,
@@ -12831,7 +12831,7 @@
       "Image8": null,
       "Image9": null
     },
-    "EX 401 Shiki · Tsumiyomi ([qcf+AC > hcb+A/C] / [236AC > 63214A/C])": {
+    "EX 401 Shiki · Tumiyomi ([qcf+AC > hcb+A/C] / [236AC > 63214A/C])": {
       "Startup (F)": 9,
       "Active (F)": 3,
       "Recovery (F)": 24,
@@ -12854,7 +12854,7 @@
       "Image8": null,
       "Image9": null
     },
-    "EX 402 Shiki · Batsuyomi ([qcf+AC > hcb+A/C > f+A/C] / [236AC > 63214A/C > 6A/C])": {
+    "EX 402 Shiki · Batuyomi ([qcf+AC > hcb+A/C > f+A/C] / [236AC > 63214A/C > 6A/C])": {
       "Startup (F)": 10,
       "Active (F)": "1,(3),4",
       "Recovery (F)": 37,
@@ -12946,7 +12946,7 @@
       "Image8": null,
       "Image9": null
     },
-    "EX 125 Shiki · Yanosabi① ([qcf+ACx3 > A/C] / [236ACx3 > A/C])": {
+    "EX 127 Shiki · Yanosabi① ([qcf+ACx3 > A/C] / [236ACx3 > A/C])": {
       "Startup (F)": 7,
       "Active (F)": 4,
       "Recovery (F)": 29,
@@ -12992,7 +12992,7 @@
       "Image8": null,
       "Image9": null
     },
-    "EX 128 Shiki · Yanosabi② ([qcf+ACx2 > hcb+A/C] / [236ACx2 > 63214A/C])": {
+    "EX 127 Shiki · Yanosabi② ([qcf+ACx2 > hcb+A/C] / [236ACx2 > 63214A/C])": {
       "Startup (F)": 13,
       "Active (F)": 4,
       "Recovery (F)": 29,
@@ -13833,7 +13833,7 @@
       "Invincibility": null,
       "Whiff Cancel": null,
       "Hitbox Gallery": "Link*",
-      "Notes": "Air Grab",
+      "Notes": "Air grab but can grab grounded characters on hit and out of a whiff animation",
       "Image": null,
       "Image1": null,
       "Image2": null,
@@ -13876,10 +13876,10 @@
       "On Guard (F)": -18,
       "Damage": 199,
       "Stun": null,
-      "Invincibility": null,
+      "Invincibility": "Upper Body: 1 to 6 (6 frames)",
       "Whiff Cancel": null,
       "Hitbox Gallery": "Link*",
-      "Notes": "Air Grab",
+      "Notes": "Air grab but can grab grounded characters on hit and out of a whiff animation",
       "Image": null,
       "Image1": null,
       "Image2": null,
@@ -14075,7 +14075,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Jigoku Gokuraku Otoshi (in close, [hcbx2+A/C] / [6321463214A/C])": {
+    "Jigoku Gokuraku-Otoshi (in close, [hcbx2+A/C] / [6321463214A/C])": {
       "Startup (F)": 1,
       "Active (F)": 2,
       "Recovery (F)": 49,
@@ -14098,7 +14098,7 @@
       "Image8": null,
       "Image9": null
     },
-    "MAX Jigoku Gokuraku Otoshi (in close, [hcbx2+AC] / [6321463214AC])": {
+    "MAX Jigoku Gokuraku-Otoshi (in close, [hcbx2+AC] / [6321463214AC])": {
       "Startup (F)": 1,
       "Active (F)": 2,
       "Recovery (F)": 49,
@@ -23302,7 +23302,7 @@
       "Invincibility": "Low: from frame 1 until recovery",
       "Whiff Cancel": null,
       "Hitbox Gallery": "Link*: Proximity Box",
-      "Notes": "Proximity Box appears on frames 8 to 22",
+      "Notes": "Proximity Box appears on frames 8 to 22. 35 total frames on whiff. 21 fixed frames of recovery on block",
       "Image": null,
       "Image1": null,
       "Image2": null,
@@ -23325,7 +23325,7 @@
       "Invincibility": "Low: from frame 1 until recovery",
       "Whiff Cancel": null,
       "Hitbox Gallery": "Link*: Proximity Box",
-      "Notes": "Proximity Box appears on frames 8 to 34",
+      "Notes": "Proximity Box appears on frames 8 to 34. 47 total frames on whiff. 21 fixed frames of recovery on block",
       "Image": null,
       "Image1": null,
       "Image2": null,
