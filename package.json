@@ -1,7 +1,7 @@
 {
-  "name": "kof98fe-framebot",
+  "name": "kofxiii-framebot",
   "version": "1.0.0",
-  "description": "Discord frame bot for KOF 98FE",
+  "description": "Discord frame bot for KOF XIII",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -23,11 +23,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FranckFrost/kof98fe_framebot.git"
+    "url": "git+https://github.com/FranckFrost/kofxiii_framebot.git"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/FranckFrost/koF98fe_framebot/issues"
+    "url": "https://github.com/FranckFrost/koFxiii_framebot/issues"
   },
-  "homepage": "https://github.com/FranckFrost/kof98fe_framebot#readme"
+  "homepage": "https://github.com/FranckFrost/kofxiii_framebot#readme"
 }
