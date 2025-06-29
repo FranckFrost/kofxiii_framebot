@@ -1344,7 +1344,7 @@
       "On Guard (F)": -4,
       "Damage": 80,
       "Stun": 7,
-      "Invincibility": "Low: 6 to 12 (7 frames)",
+      "Invincibility": "Low: 6 to 11 (6 frames)",
       "Whiff Cancel": null,
       "Hitbox Gallery": "Link*",
       "Notes": null,
@@ -30895,7 +30895,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Lp Dyanmite Ralf Punch ([qcb+A] / [214A])": {
+    "Lp Dynamite Ralf Punch ([qcb+A] / [214A])": {
       "Startup (F)": 10,
       "Active (F)": 4,
       "Recovery (F)": 22,
@@ -30918,7 +30918,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Hp Dyanmite Ralf Punch ([qcb+C] / [214C])": {
+    "Hp Dynamite Ralf Punch ([qcb+C] / [214C])": {
       "Startup (F)": 21,
       "Active (F)": 7,
       "Recovery (F)": 19,
@@ -30941,7 +30941,7 @@
       "Image8": null,
       "Image9": null
     },
-    "EX Dyanmite Ralf Punch ([qcb+AC] / [214AC])": {
+    "EX Dynamite Ralf Punch ([qcb+AC] / [214AC])": {
       "Startup (F)": 12,
       "Active (F)": 9,
       "Recovery (F)": 13,
@@ -31205,7 +31205,7 @@
       "Invincibility": "Full: 1 to 3 (3 frames)",
       "Whiff Cancel": null,
       "Hitbox Gallery": null,
-      "Notes": "Activation Box appears on frame frames 7 to 26. 43 total frames on whiff. Freeze of 29",
+      "Notes": "Unscaled 100 damage. Activation Box appears on frame frames 7 to 26. 43 total frames on whiff. Freeze of 29",
       "Image": null,
       "Image1": null,
       "Image2": null,
@@ -31217,7 +31217,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Jet Vulcan Punch ([hcbx2+AC] / [6321463214AC])": {
+    "Jet · Vulcan Punch ([hcbx2+AC] / [6321463214AC])": {
       "Startup (F)": 17,
       "Active (F)": "1,(1)x22",
       "Recovery (F)": 45,
@@ -31228,7 +31228,7 @@
       "Invincibility": "Full: 1 (1 frame)",
       "Whiff Cancel": null,
       "Hitbox Gallery": null,
-      "Notes": "Freeze of 44",
+      "Notes": "Unscaled 80 damage. Freeze of 44",
       "Image": null,
       "Image1": null,
       "Image2": null,
@@ -32093,7 +32093,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Lk Hien Senpuu Kyaku (charge [db~f+B] / [[1]6B])": {
+    "Lk Hien Shippuu Kyaku (charge [db~f+B] / [[1]6B])": {
       "Startup (F)": 14,
       "Active (F)": 6,
       "Recovery (F)": 14,
@@ -32116,7 +32116,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Hk Hien Senpuu Kyaku (charge [db~f+D] / [[1]6D])": {
+    "Hk Hien Shippuu Kyaku (charge [db~f+D] / [[1]6D])": {
       "Startup (F)": 18,
       "Active (F)": 17,
       "Recovery (F)": 16,
@@ -32139,7 +32139,7 @@
       "Image8": null,
       "Image9": null
     },
-    "EX Hien Senpuu Kyaku (charge [db~f+BD] / [[1]6BD])": {
+    "EX Hien Shippuu Kyaku (charge [db~f+BD] / [[1]6BD])": {
       "Startup (F)": 16,
       "Active (F)": 17,
       "Recovery (F)": 17,
@@ -32311,7 +32311,7 @@
       "Invincibility": null,
       "Whiff Cancel": null,
       "Hitbox Gallery": "Link*",
-      "Notes": "Freeze of 29. 26 fixed frames of recovery on block",
+      "Notes": "Unscaled 60 damage. 26 fixed frames of recovery on block. Freeze of 29",
       "Image": null,
       "Image1": null,
       "Image2": null,
@@ -32334,7 +32334,7 @@
       "Invincibility": "Full: 1 to 23 (23 frames)",
       "Whiff Cancel": null,
       "Hitbox Gallery": "Link*",
-      "Notes": "Freeze of 29. 37 fixed frames of recovery on block",
+      "Notes": "Unscaled 100 damage. 37 fixed frames of recovery on block. Freeze of 29",
       "Image": null,
       "Image1": null,
       "Image2": null,
@@ -32380,7 +32380,7 @@
       "Invincibility": "Full: 1 to 8 (8 frames)",
       "Whiff Cancel": null,
       "Hitbox Gallery": "Link*",
-      "Notes": "Freeze of 45. Startup of 4 vs standing",
+      "Notes": "Startup of 4 vs standing. Freeze of 45",
       "Image": null,
       "Image1": null,
       "Image2": null,
@@ -33371,7 +33371,7 @@
       "Invincibility": "Upper Body: 12 to 31 (20 frames)",
       "Whiff Cancel": null,
       "Hitbox Gallery": "Link*",
-      "Notes": "Freeze of 29. 27 fixed frames of recovery on block",
+      "Notes": "27 fixed frames of recovery on block. Freeze of 29",
       "Image": null,
       "Image1": null,
       "Image2": null,
@@ -33394,7 +33394,7 @@
       "Invincibility": "Full: 1 to 17 (17 frames) / Upper Body: 18 to 29 (12 frames)",
       "Whiff Cancel": null,
       "Hitbox Gallery": "Link*",
-      "Notes": "Freeze of 29. 27 fixed frames of recovery on block",
+      "Notes": "Unscaled 100 damage. 27 fixed frames of recovery on block. Freeze of 29",
       "Image": null,
       "Image1": null,
       "Image2": null,
@@ -33417,7 +33417,7 @@
       "Invincibility": null,
       "Whiff Cancel": null,
       "Hitbox Gallery": "Link*",
-      "Notes": "Freeze of 29. C version travels faster than A Version",
+      "Notes": "C version travels faster than A Version. Freeze of 29",
       "Image": null,
       "Image1": null,
       "Image2": null,
@@ -33715,7 +33715,7 @@
       "On Guard (F)": 0,
       "Damage": 80,
       "Stun": 7,
-      "Invincibility": null,
+      "Invincibility": "Low: 6 to 11 (6 frames)",
       "Whiff Cancel": null,
       "Hitbox Gallery": "Link*",
       "Notes": null,
@@ -34055,7 +34055,7 @@
     "In (In air, [f+B] / [6B])": {
       "Startup (F)": 7,
       "Active (F)": 4,
-      "Recovery (F)": "(Landing)+7",
+      "Recovery (F)": "Until Landing+7",
       "On Hit (F)": "7 (lowest height)",
       "On Guard (F)": "5 (lowest height)",
       "Damage": 50,
@@ -34078,7 +34078,7 @@
     "Hatsu (In air, [b+B] / [4B])": {
       "Startup (F)": 6,
       "Active (F)": 4,
-      "Recovery (F)": "(Landing)+7",
+      "Recovery (F)": "Until Landing+7",
       "On Hit (F)": "8 (lowest height)",
       "On Guard (F)": "6 (lowest height)",
       "Damage": 50,
@@ -34219,7 +34219,7 @@
       "Recovery (F)": "-",
       "On Hit (F)": "SKD",
       "On Guard (F)": "-",
-      "Damage": null,
+      "Damage": 50,
       "Stun": null,
       "Invincibility": null,
       "Whiff Cancel": null,
@@ -34265,7 +34265,7 @@
       "Recovery (F)": "-",
       "On Hit (F)": "HKD",
       "On Guard (F)": "-",
-      "Damage": null,
+      "Damage": 125,
       "Stun": null,
       "Invincibility": null,
       "Whiff Cancel": null,
@@ -34607,7 +34607,7 @@
     "Hk Shichiri-Gake ([dd+D] / [22D])": {
       "Startup (F)": "16 (pre-teleport)",
       "Active (F)": "-",
-      "Recovery (F)": "26 (post-teleport, to cancel window during fall) / (Landing)+1",
+      "Recovery (F)": "26 (post-teleport), (Landing)+1",
       "On Hit (F)": "-",
       "On Guard (F)": "-",
       "Damage": null,
@@ -34615,7 +34615,7 @@
       "Invincibility": "Full: 13 to 19 (7 frames)",
       "Whiff Cancel": null,
       "Hitbox Gallery": "Link*",
-      "Notes": "Saiki teleports into the air.",
+      "Notes": "Saiki teleports into the air. He can use moves during his fall.",
       "Image": null,
       "Image1": null,
       "Image2": null,
@@ -34638,7 +34638,7 @@
       "Invincibility": "Full: 1 to 8 (8 frames)",
       "Whiff Cancel": null,
       "Hitbox Gallery": "Link*",
-      "Notes": "Freeze of 29",
+      "Notes": "Unscaled 60 damage. Freeze of 29",
       "Image": null,
       "Image1": null,
       "Image2": null,
@@ -34661,7 +34661,7 @@
       "Invincibility": "Full: from frame 1 until landing",
       "Whiff Cancel": null,
       "Hitbox Gallery": "Link",
-      "Notes": "Freeze of 29. 16f of landing recovery on whiff",
+      "Notes": "Unscaled 100 damage. 16f of landing recovery on whiff. Freeze of 29",
       "Image": null,
       "Image1": null,
       "Image2": null,
@@ -34673,7 +34673,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Tokoyami-no-Fune Washiba Otoshi ([qcfx2+A/C] / [236236A/C])": {
+    "Tokoyami-no-Fune ([qcfx2+A/C] / [236236A/C])": {
       "Startup (F)": 39,
       "Active (F)": "Full Screen Projectile",
       "Recovery (F)": 27,
@@ -34696,7 +34696,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Kyoruu-no-Ori (in close, [hcbx2+A/C] / [6321463214A/C])": {
+    "Kyoryuu-no-Ori (in close, [hcbx2+A/C] / [6321463214A/C])": {
       "Startup (F)": 1,
       "Active (F)": 1,
       "Recovery (F)": 30,
@@ -34719,7 +34719,7 @@
       "Image8": null,
       "Image9": null
     },
-    "MAX Kyoruu-no-Ori (in close, [hcbx2+AC] / [6321463214AC])": {
+    "MAX Kyoryuu-no-Ori (in close, [hcbx2+AC] / [6321463214AC])": {
       "Startup (F)": 1,
       "Active (F)": 1,
       "Recovery (F)": 30,
@@ -35365,7 +35365,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Fusenkyku ([f+B] / [6B])": {
+    "Fusenkyaku ([f+B] / [6B])": {
       "Startup (F)": 16,
       "Active (F)": 4,
       "Recovery (F)": 17,
@@ -35756,7 +35756,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Danken (Repel) ([qcb+C] / [214C])": {
+    "Danken(Repel) ([qcb+C] / [214C])": {
       "Startup (F)": 6,
       "Active (F)": "8 (Projectile Nullifier)",
       "Recovery (F)": 18,
@@ -36540,7 +36540,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Shikkuu Zanryuu Kyaku ([qcf+A/Cx2 > qcf+B/D] / [236A/Cx2 > 236B/D])": {
+    "(Derivation) Shikkuu Zanryuu Kyaku ([qcf+A/Cx2 > qcf+B/D] / [236A/Cx2 > 236B/D])": {
       "Startup (F)": 14,
       "Active (F)": 4,
       "Recovery (F)": 24,
@@ -36586,7 +36586,7 @@
       "Image8": null,
       "Image9": null
     },
-    "EX Ryuu Touda 2 ([qcf+ACx2] / [236ACx2])": {
+    "EX Rintesshou ([qcf+ACx2] / [236ACx2])": {
       "Startup (F)": 9,
       "Active (F)": 4,
       "Recovery (F)": 15,
@@ -36609,7 +36609,7 @@
       "Image8": null,
       "Image9": null
     },
-    "EX Ryuu Touda 3 ([qcf+ACx3] / [236ACx3])": {
+    "EX Ryuu Touda 2 ([qcf+ACx3] / [236ACx3])": {
       "Startup (F)": 8,
       "Active (F)": 3,
       "Recovery (F)": 17,
@@ -36632,7 +36632,7 @@
       "Image8": null,
       "Image9": null
     },
-    "EX Ryuu Touda 4 ([qcf+ACx4] / [236ACx4])": {
+    "EX Rintesshou 2 ([qcf+ACx4] / [236ACx4])": {
       "Startup (F)": 9,
       "Active (F)": 4,
       "Recovery (F)": 15,
@@ -36655,7 +36655,7 @@
       "Image8": null,
       "Image9": null
     },
-    "EX Shikkuu Zanryuu Kyaku ([qcf+ACx4 > qcf+B/D] / [236ACx4 > 236B/D])": {
+    "EX (Derivation) Shikkuu Zanryuu Kyaku ([qcf+ACx4 > qcf+B/D] / [236ACx4 > 236B/D])": {
       "Startup (F)": 14,
       "Active (F)": 4,
       "Recovery (F)": 23,
@@ -37161,7 +37161,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Seigan · Senki Kakkei ([qcfx2+AC] / [236236AC])": {
+    "Seigan · Senki Hakkei ([qcfx2+AC] / [236236AC])": {
       "Startup (F)": 15,
       "Active (F)": 48,
       "Recovery (F)": 20,
@@ -38821,7 +38821,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Buster Throw (Forward) (close, [b/f+C/D] / [4/6C/D])": {
+    "Buster Throw (close, [b/f+C/D] / [4/6C/D])": {
       "Startup (F)": 1,
       "Active (F)": 1,
       "Recovery (F)": 0,
@@ -39056,7 +39056,7 @@
       "Active (F)": 16,
       "Recovery (F)": 14,
       "On Hit (F)": "3 (Standing) / 5 (Crouching)",
-      "On Guard (F)": "0 (Standing) / -1 (Standing, Closest Block) / 3 (Crouching)",
+      "On Guard (F)": "0 (Standing) / -1 (Standing, point blank) / 3 (Crouching)",
       "Damage": 78,
       "Stun": 8,
       "Invincibility": null,
@@ -40249,7 +40249,7 @@
       "Image8": null,
       "Image9": null
     },
-    "Splash Derivation ([qcb+AC > qcf+A/C] / [214AC > 236A/C])": {
+    "(Derivation) Splash ([qcb+AC > qcf+A/C] / [214AC > 236A/C])": {
       "Startup (F)": 20,
       "Active (F)": 1,
       "Recovery (F)": 9,
@@ -40306,7 +40306,7 @@
       "Invincibility": "Full: 1 (1 frame)",
       "Whiff Cancel": null,
       "Hitbox Gallery": "Link",
-      "Notes": "Freeze of 29. Command Grab",
+      "Notes": "Unscaled 100 damage. Command Grab. Freeze of 29",
       "Image": null,
       "Image1": null,
       "Image2": null,
