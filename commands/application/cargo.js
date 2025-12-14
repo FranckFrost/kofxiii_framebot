@@ -96,7 +96,6 @@ module.exports = {
           )
       }
         embed.setFooter({ text: 'Got feedback? Join the XIII server: discord.gg/tNgSuGJ', iconURL: 'https://cdn.iconscout.com/icon/free/png-128/discord-3-569463.png' });
-        let file;
 		if (hitboxes.length === 0) {
           embed.addField('No image was found for this move', 'Feel free to share with Franck Frost if you have one.', true);
           embeds.push(embed)
